@@ -32,6 +32,9 @@ jobs:
       - name: Run tests
         run: npm test
 
+      - name: Run unit tests
+        run: node unit.js
+
       - name: Upload test results (optional)
         if: always()
         uses: actions/upload-artifact@v4
